@@ -1,0 +1,21 @@
+body {
+    width: 960px;
+    margin: 0px auto;
+}
+
+header {
+    margin: 0px auto;
+    height: 80px;
+    color: white;
+    background-color: black;
+}
+
+nav {
+    /* float: right; */
+    margin-right: 20px;
+    margin-top: 5px
+}
+
+.white {
+    color: white;
+}
