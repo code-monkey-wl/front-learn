@@ -1,21 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     width: 960px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 header {
-    margin: 0px auto;
+    /* 居中 */
+    margin: 0 auto;
     height: 80px;
     color: white;
     background-color: black;
 }
 
-nav {
-    /* float: right; */
+.logo {
+    float: left;
+    margin-left: 100px;
+    margin-top: 5px;
+}
+
+.nav-right {
+    float: right;
     margin-right: 20px;
     margin-top: 5px
 }
 
 .white {
     color: white;
+}
+
+.banner {
+    height: 300px;
+    margin: 0 auto;
+    background-color: rgb(102, 187, 51);
+    position: relative;
+}
+
+.banner > ol {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    margin: 0;
+    /*margin: 255px 20px 0 0;
+    float: right;*/
+    padding: 0;
+    list-style: none none;
+}
+
+.banner > ol > li {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px black solid;
+    width: 30px;
+    /*垂直居中了*/
+    height: 30px;
+    line-height: 30px;
+    margin-right: 4px;
+    text-align: center;
+    background-color: rgb(224, 241, 214);
+    /* inline-block的元素生效 */
+    vertical-align: text-bottom;
+}
+
+.banner-current {
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.menu-container {
+    position: relative;
+    height: 70px;
+    box-sizing: border-box;
+    border-bottom: 1px rgb(238, 238, 238) solid;
+}
+
+.menu {
+    box-sizing: border-box;
+    position: absolute;
+    left: 200px;
+    bottom: 0;
+    width: 400px;
+
+}
+
+.menu > span {
+    /*文字垂直居中*/
+    width: 115px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    border: 1px rgb(238, 238, 238) solid;
+    border-bottom: none;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(238, 238, 238);
+    /*覆盖掉 container 的 border*/
+    margin-bottom: -1px
+}
+
+.menu-current {
+    /*覆盖掉 container 的 border*/
+    background-color: white !important;
+}
+
+main {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    /*-10px 用来抵消最下面的 section margin bottom*/
+    margin: 20px 100px -10px;
+}
+
+main > section {
+    padding: 80px;
+    border: 1px black solid;
+    margin-bottom: 10px
+}
+
+footer {
+    height: 70px;
+    background-color: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+    padding-top: 5px;
 }
